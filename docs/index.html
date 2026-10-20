@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Source to Model | Original Synthetic QA Proof</title>
+<meta name="description" content="Original AI-assisted synthetic geometry QA: reproducible wall, opening and dimensional discrepancies. Not a client deliverable or certified architecture review.">
+<style>
+:root{color-scheme:light;--bg:#f7f8fb;--ink:#102033;--muted:#556779;--line:#d8e0eb;--accent:#2448a8;--issue:#c34335;--review:#a66b0f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:system-ui,Segoe UI,sans-serif;color:var(--ink);line-height:1.55}
+main{max-width:1100px;margin:0 auto;padding:34px 22px 65px}header{margin-bottom:30px}h1{font-size:clamp(29px,4.2vw,48px);letter-spacing:-.025em;line-height:1.17;margin:12px 0}h2{font-size:22px;margin:26px 0 13px}
+.kicker{font-size:12px;font-weight:800;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
+.sub{color:var(--muted);max-width:720px;margin:0 0 18px}
+.pill{display:inline-block;background:#e8edfb;border:1px solid #ccd7f7;border-radius:20px;padding:5px 11px;font-size:12px;margin:3px;color:#2448a8}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0 28px}
+.card,.panel,.table-box{background:#fff;border:1px solid var(--line);border-radius:13px;box-shadow:0 2px 8px #10203308}
+.card{padding:17px 18px}.num{font-size:31px;font-weight:750;line-height:1.2}.desc{font-size:13px;color:var(--muted);margin-top:4px}
+.schematics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.panel{padding:15px}.panel h3{font-size:17px;margin:0 0 4px}.panel p{margin:0 0 12px;color:var(--muted);font-size:13px}
+svg{width:100%;height:auto;background:#fafcff;border:1px solid #e5eafa;border-radius:9px}
+.legend{font-size:12px;margin:8px 0 0;color:var(--muted)}.legend span{display:inline-block;margin-right:12px}
+table{border-collapse:collapse;width:100%;font-size:14px}th{text-align:left;background:#f0f4fb;font-size:12px;text-transform:uppercase;letter-spacing:.04em}td,th{padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}
+.fail{color:var(--issue);font-weight:700}.review{color:var(--review);font-weight:700}code{font-size:12px;background:#edf0f5;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}a{color:var(--accent)}a:focus{outline:3px solid #3b83f6;outline-offset:3px}
+.note{font-size:13px;color:var(--muted);border-left:3px solid var(--accent);padding-left:12px;margin-top:20px}footer{margin-top:30px;font-size:12px;color:var(--muted)}
+@media(max-width:680px){.schematics{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}td,th{padding:9px 7px;font-size:12px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="kicker">One Cursor · VM3 Original QA Study · 20 October 2026</div>
+<h1>Compare the drawing.<br>Report the differences.</h1>
+<p class="sub">A reproducible, offline source-to-model quality check. This is a <strong>fully invented exercise</strong> demonstrating QA methods, not a customer project, architectural license, or proof of real construction defects.</p>
+<span class="pill">Python standard library · no backend</span>
+<span class="pill">Synthetic geometry only</span>
+<span class="pill">Human review required</span>
+</header>
+<section class="cards" aria-label="Test metrics">
+<div class="card"><div class="num">16/16</div><div class="desc">Offline regression checks passed</div></div>
+<div class="card"><div class="num" style="color:#c34335">4</div><div class="desc">Deliberately planted mismatches flagged</div></div>
+<div class="card"><div class="num" style="color:#a66b0f">1</div><div class="desc">Uncertain source dimension: review only</div></div>
+</section>
+<section aria-labelledby="diagram-heading">
+<h2 id="diagram-heading">Fictional plan vs. fictional model</h2>
+<div class="schematics">
+<div class="panel"><h3>Source interpretation</h3><p>Nominal footprint 7.0 × 4.2 m; declared source opening and fixture.</p>
+<svg viewBox="0 0 444 340" role="img" aria-label="Invented source floorplan: two rooms, window on north wall, entry opening on east wall, cabinet furniture">
+<g fill="none" stroke="#1e3863" stroke-width="5"><path d="M46 269V59H396V121 M396 166V269H46"/></g>
+<path d="M336 269H278" stroke="#28a3b5" stroke-width="7"/>
+<path d="M216 60V269" stroke="#71839d" stroke-width="3" stroke-dasharray="9 5" fill="none"/>
+<rect x="97" y="98" width="56" height="22" rx="2" fill="#d9dde5" stroke="#687996"/>
+<path d="M396 121 A45 45 0 0 0 353 166" stroke="#416ccc" stroke-width="2" fill="none"/>
+<g fill="#1f3756" font-family="system-ui" text-anchor="middle"><text x="125" y="182" font-size="17">Bedroom</text><text x="300" y="182" font-size="17">Kitchen</text><text x="125" y="204" font-size="12">3.4 × 3.9 m≈</text><text x="300" y="204" font-size="12">3.1 × 3.6 m</text></g>
+<text x="295" y="294" fill="#13859c" font-family="system-ui" font-size="12">Window, 1.1 m</text><text x="18" y="36" fill="#556779" font-family="system-ui" font-size="13">7.0 m × 4.2 m nominal</text>
+</svg>
+<p class="legend">Blue wall lines · teal source window · gray cabinet = furniture</p>
+</div>
+<div class="panel"><h3>Reconstructed example</h3><p>Intentionally perturbed to exercise report reproducibility and source uncertainty.</p>
+<svg viewBox="0 0 444 340" role="img" aria-label="Invented reconstructed floorplan with shifted east wall endpoint, moved entry, missing north window and cabinet represented as structural wall">
+<g fill="none" stroke="#1e3863" stroke-width="5"><path d="M46 269V59H396V143 M396 188V280H46V269"/></g>
+<path d="M396 269V280" stroke="#c34335" stroke-width="6"/>
+<path d="M396 121V143 M396 166V188" stroke="#c34335" stroke-width="5" stroke-dasharray="5 4"/>
+<path d="M336 269H278" stroke="#c34335" stroke-width="4" stroke-dasharray="6 5"/>
+<path d="M216 60V269" stroke="#71839d" stroke-width="3" stroke-dasharray="9 5" fill="none"/>
+<path d="M97 110H153" stroke="#c34335" stroke-width="6"/>
+<g fill="#1f3756" font-family="system-ui" text-anchor="middle"><text x="125" y="182" font-size="17">Bedroom</text><text x="300" y="182" font-size="17">Kitchen</text><text x="125" y="204" font-size="12">3.0 × 3.9 m</text><text x="300" y="204" font-size="12">3.1 × 3.6 m</text></g>
+<text x="272" y="294" fill="#c34335" font-family="system-ui" font-size="12">Window absent</text><text x="18" y="36" fill="#c34335" font-family="system-ui" font-size="13">Synthetic defect annotations</text>
+</svg>
+<p class="legend">Red = planted discrepancy · dashed teal-aligned source window absent</p>
+</div>
+</div>
+</section>
+<section aria-labelledby="findings-heading">
+<h2 id="findings-heading">Structured findings</h2>
+<div class="table-box"><table><thead><tr><th scope="col">Element</th><th scope="col">Finding</th><th scope="col">Triage</th></tr></thead><tbody>
+<tr><td>East wall</td><td>Endpoint drifts 0.22 m beyond the defined 0.10 m threshold</td><td class="fail">FAIL</td></tr>
+<tr><td>Entry door</td><td>Offset from east wall origin changes from 1.25 m to 1.70 m</td><td class="fail">FAIL</td></tr>
+<tr><td>North window</td><td>Declared 1.1 m opening is missing from the model</td><td class="fail">FAIL</td></tr>
+<tr><td>Cabinet</td><td>Source fixture ID is incorrectly classified as a structural wall</td><td class="fail">FAIL</td></tr>
+<tr><td>Bedroom</td><td>Width changes from 3.4 m to 3.0 m, but original source was tagged approximate</td><td class="review">REVIEW</td></tr>
+</tbody></table></div>
+<p class="note">This static illustration is a simplified schematic, not the source of measurement truth. The Python code and committed JSON fixtures are the reproducible evidence. All examples are fictional; no real floorplan was uploaded.</p>
+</section>
+<section>
+<h2>Verify the work</h2>
+<p>Inspect the <a href="https://github.com/livastic-vm3-primary-tmp-260920/floorplan-model-qa-proof-20261020">original public source, 16 tests and structured JSON example</a>. No dependencies beyond Python 3.10+. The script does not perform raster recognition, full CAD/BIM parsing, real-world route analysis, code-compliance inspection or customer-site testing.</p>
+</section>
+<footer>Original AI-assisted technical QA demonstration. One Cursor, South Korea. No testimonials, paid sales, custody or professional design certification implied.</footer>
+</main></body></html>

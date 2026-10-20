@@ -1,19 +1,69 @@
 {
   "unit": "m",
-  "note": "Invented example, NOT a private client drawing",
+  "note": "Invented example, NOT a private client drawing; footprint 7.0 x 4.2 m, rooms nominally positioned side by side",
   "walls": [
-    {"id":"south","x1":0,"y1":0,"x2":7,"y2":0},
-    {"id":"east","x1":7,"y1":0,"x2":7,"y2":3},
-    {"id":"north","x1":7,"y1":3,"x2":0,"y2":3},
-    {"id":"west","x1":0,"y1":3,"x2":0,"y2":0}
+    {
+      "id": "south",
+      "x1": 0,
+      "y1": 0,
+      "x2": 7,
+      "y2": 0
+    },
+    {
+      "id": "east",
+      "x1": 7,
+      "y1": 0,
+      "x2": 7,
+      "y2": 4.2
+    },
+    {
+      "id": "north",
+      "x1": 7,
+      "y1": 4.2,
+      "x2": 0,
+      "y2": 4.2
+    },
+    {
+      "id": "west",
+      "x1": 0,
+      "y1": 4.2,
+      "x2": 0,
+      "y2": 0
+    }
   ],
   "rooms": [
-    {"id":"bedroom","width_m":3.4,"depth_m":3.9,"source_uncertain":true},
-    {"id":"kitchen","width_m":3.1,"depth_m":3.6,"source_uncertain":false}
+    {
+      "id": "bedroom",
+      "width_m": 3.4,
+      "depth_m": 3.9,
+      "source_uncertain": true
+    },
+    {
+      "id": "kitchen",
+      "width_m": 3.1,
+      "depth_m": 3.6,
+      "source_uncertain": false
+    }
   ],
   "openings": [
-    {"id":"entry","wall_id":"east","offset_m":1.25,"width_m":0.9},
-    {"id":"window","wall_id":"north","offset_m":1.15,"width_m":1.1}
+    {
+      "id": "entry",
+      "wall_id": "east",
+      "offset_m": 1.25,
+      "width_m": 0.9
+    },
+    {
+      "id": "window",
+      "wall_id": "north",
+      "offset_m": 1.15,
+      "width_m": 1.1
+    }
   ],
-  "fixtures":[{"id":"cabinet-01","kind":"furniture","description":"Not a wall"}]
+  "fixtures": [
+    {
+      "id": "cabinet-01",
+      "kind": "furniture",
+      "description": "Not a wall"
+    }
+  ]
 }
