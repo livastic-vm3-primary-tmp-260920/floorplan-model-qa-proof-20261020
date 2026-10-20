@@ -1,0 +1,19 @@
+{
+  "unit": "m",
+  "note": "Fictitious reconstruction intentionally contains example defects",
+  "walls":[
+    {"id":"south","x1":7,"y1":0,"x2":0,"y2":0},
+    {"id":"east","x1":7,"y1":0,"x2":7,"y2":3.22},
+    {"id":"north","x1":7,"y1":3,"x2":0,"y2":3},
+    {"id":"west","x1":0,"y1":3,"x2":0,"y2":0},
+    {"id":"cabinet-01","x1":1,"y1":1,"x2":2,"y2":1}
+  ],
+  "rooms":[
+    {"id":"bedroom","width_m":3.0,"depth_m":3.9},
+    {"id":"kitchen","width_m":3.1,"depth_m":3.6}
+  ],
+  "openings":[
+    {"id":"entry","wall_id":"east","offset_m":1.7,"width_m":0.9}
+  ],
+  "fixtures":[]
+}

@@ -1,0 +1,63 @@
+{
+  "report_type": "SYNTHETIC_OFFLINE_EXAMPLE_NOT_CUSTOMER_DELIVERY",
+  "unit": "m",
+  "tolerance_m": 0.1,
+  "summary": {
+    "fail": 4,
+    "review": 1,
+    "pass": false
+  },
+  "findings": [
+    {
+      "code": "OPENING_DIMENSION_DRIFT",
+      "severity": "fail",
+      "kind": "openings",
+      "id": "entry",
+      "detail": "offset_m differs beyond tolerance",
+      "observed": 1.7,
+      "expected": 1.25
+    },
+    {
+      "code": "MISSING_OPENING",
+      "severity": "fail",
+      "kind": "openings",
+      "id": "window",
+      "detail": "Source element absent in reconstructed model",
+      "observed": null,
+      "expected": null
+    },
+    {
+      "code": "UNCERTAIN_SOURCE_DIMENSION",
+      "severity": "review",
+      "kind": "rooms",
+      "id": "bedroom",
+      "detail": "width_m differs; source confidence gates severity",
+      "observed": 3.0,
+      "expected": 3.4
+    },
+    {
+      "code": "FIXTURE_CLASSIFIED_AS_WALL",
+      "severity": "fail",
+      "kind": "walls",
+      "id": "cabinet-01",
+      "detail": "Source fixture incorrectly modeled as structural wall",
+      "observed": null,
+      "expected": null
+    },
+    {
+      "code": "WALL_ENDPOINT_DRIFT",
+      "severity": "fail",
+      "kind": "walls",
+      "id": "east",
+      "detail": "Maximum matched endpoint shift exceeds stated tolerance",
+      "observed": 0.22,
+      "expected": "<= 0.1m"
+    }
+  ],
+  "limitations": [
+    "Illustrative synthetic structured data, not a real customer plan or verified reconstruction.",
+    "No CAD/PDF/image recognition, building-code validation, occupancy or safety certification.",
+    "Conflicting uncertain source dimensions are REVIEW, not falsely asserted defects.",
+    "Every finding needs source provenance and human inspection before use in production."
+  ]
+}
