@@ -4,7 +4,7 @@ This is independently authored **AI-assisted QA engineering source** supporting 
 
 This demonstration compares two invented machine-readable interpretations of a floorplan, then emits deterministic discrepancy records.
 
-## Review the interactive-format illustrated evidence without installing anything
+## Review the browser-readable static illustration without installing anything
 
 **[Open the public HTML side-by-side synthetic QA example](https://livastic-vm3-primary-tmp-260920.github.io/floorplan-model-qa-proof-20261020/)**.
 
